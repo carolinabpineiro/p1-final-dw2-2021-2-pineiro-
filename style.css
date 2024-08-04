@@ -1,0 +1,176 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    flex: 1;
+}
+
+header {
+    padding: 0px;
+    margin-bottom: 20px;
+}
+
+#navbarNav {
+    justify-content: end;
+    margin-right: 20px;
+}
+
+.nav-item {
+    margin-right: 20px;
+   
+}
+
+/* Estilos para el menú hamburguesa */
+@media (max-width: 991.98px) { /* Esto aplica solo en pantallas menores a 992px (viewports móviles) */
+    .navbar-nav {
+        text-align: center; /* Centramos los elementos en el menú hamburguesa */
+        margin: 0; /* Eliminamos el margen por defecto */
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 15px; /* Añadimos espacio entre los botones */
+    }
+
+    .navbar-nav .nav-link {
+        padding: 10px 15px; /* Ajustamos el padding para un diseño más espaciado */
+        border: none;
+        border-radius: 0; /* Quita el borde redondeado si es necesario */
+    }
+
+    .navbar-nav .nav-item .btn-outline-secondary {
+        border: none;
+        box-shadow: none;
+    }
+    
+    .navbar-nav .nav-item .btn-outline-secondary .nav-link {
+        color: #000; /* Ajusta el color según tus necesidades */
+    }
+    
+    /* Elimina el borde de los botones dentro del menú hamburguesa */
+    .navbar-collapse .nav-item .btn-outline-secondary {
+        border: none;
+        box-shadow: none;
+    }
+    
+
+    .navbar-toggler {
+        margin-right: 20px;
+    }
+
+    .navbar-collapse {
+        justify-content: center; /* Centramos los elementos del menú dentro del colapso */
+    }
+
+    /* Estilo para ajustar las columnas en móviles */
+.table th, .table td {
+    white-space: nowrap; /* Evita que el texto se rompa en varias líneas */
+    font-size: 0.875rem; /* Tamaño de fuente más pequeño para pantallas pequeñas */
+}
+
+.table thead th {
+    font-size: 0.9rem; /* Tamaño de fuente de encabezado ligeramente mayor */
+}
+
+
+}
+
+    /*Banner*/
+
+    /* Contenedor del banner */
+.banner-container {
+    width: 100%; /* Ancho completo del contenedor */
+    height: 400px; /* Altura fija del banner, ajusta según tu necesidad */
+    overflow: hidden; /* Oculta cualquier parte de la imagen que sobresalga del contenedor */
+    position: relative; /* Asegura que el posicionamiento relativo funcione para los hijos */
+}
+
+/* Imagen del banner */
+.banner-image {
+    width: 100%; /* La imagen ocupará el ancho completo del contenedor */
+    height: 100%; /* La imagen ocupará la altura completa del contenedor */
+    object-fit: cover; /* La imagen cubrirá el contenedor sin distorsionarse */
+    position: absolute; /* Posiciona la imagen de manera absoluta dentro del contenedor */
+    top: 0; /* Alinea la imagen en la parte superior del contenedor */
+    left: 0; /* Alinea la imagen en la parte izquierda del contenedor */
+}
+
+
+
+.card {
+    margin-bottom: 20px;
+}
+
+
+/* Sobrescribir el color de fondo y texto de los botones primarios */
+.btn-primary {
+    background-color: #a83838; /* Color de fondo personalizado */
+    color: #fff; /* Color del texto */
+    border: none; /* Eliminar el borde */
+}
+
+.btn-primary:hover {
+    background-color: #b96f29; /* Color de fondo cuando se pasa el ratón sobre el botón */
+}
+
+
+.carousel-item img {
+    object-fit: cover;
+    height: 300px;
+}
+
+.logo {
+    height: 150px;
+}
+
+.banner {
+    width: 100vw;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: darkred;
+}
+
+.carrito {
+   width: 40px;
+}
+
+.slogan {
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgb(78, 9, 9);
+    font-style: italic;
+    font-size: 25px;
+}
+
+p {
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+
+.container {
+    /* Asegura que el contenedor principal no empuje al footer */
+    flex: 1;
+}
+
+footer {
+    width: 100%;
+    background-color: #343a40; /* Color de fondo oscuro */
+    color: white;
+    position: relative;
+    bottom: 0;
+}

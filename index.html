@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/vino.png">
+    <title>Home - VCH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <img class="logo" src="./images/logo.jpg" alt="logo">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-secondary">
+                        <a class="nav-link" href="index.html">HOME</a>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-outline-secondary">
+                        <a class="nav-link" href="productos.html">PRODUCTOS</a>
+                    </button>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="carrito.html">
+                        <img class="carrito" src="./images/carrito.png" alt="">
+                        (<span id="total-productos-nav">0</span>)
+                        <p>Total: $<span id="total-monto-nav">0.00</span></p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Banner -->
+    <div>
+        <div class="jumbotron">
+            <div class="banner-container">
+                <img src="./images/banner_vdh.png" alt="Banner" class="banner-image">
+            </div>
+            <h1 class="display-4">Bienvenidos a "Viñedos de Herencia"</h1>
+            <p class="slogan">Donde podrás explorar y disfrutar vinos con historia...</p>
+        </div>
+    </div>
+
+    <!-- Descripción de la empresa -->
+    <div class="container mb-4">
+        <h2>Nuestra Historia</h2>
+        <p>En el corazón de la tradición y el legado familiar, Viñedos de Herencia nace como un tributo a las raíces que nos sostienen y a los momentos que compartimos en torno a una mesa, con una copa de vino en la mano. En cada botella, en cada sorbo, se destilan historias que han sido transmitidas de generación en generación, cargadas de la sabiduría y el amor de quienes nos precedieron.</p>
+        <p>El vino no es solo una bebida; es un puente hacia el pasado, un compañero en el presente y una promesa de encuentros futuros. Viñedos de Herencia entiende la importancia de esos lazos que nos unen, de las conversaciones al atardecer, de las risas compartidas y de las lágrimas sinceras. Esos momentos únicos, irrepetibles, que quedan grabados en nuestra memoria y que, con el tiempo, se convierten en parte de nuestro propio legado.</p>
+        <p>Nuestra vinoteca es mucho más que una simple tienda de vinos. Es un espacio donde cada botella cuenta una historia, donde cada etiqueta es una página de un libro escrito con dedicación, paciencia y pasión. Viñedos de Herencia celebra la riqueza de nuestra tierra y la habilidad de nuestras manos, que transforman uvas seleccionadas en vinos que hablan de nuestras raíces.</p>
+        <p>El eslogan "Vinos con historia" encapsula esta visión. Cada uno de nuestros vinos ha sido cuidadosamente seleccionado para ofrecer una experiencia que trasciende lo cotidiano, invitando a quien lo disfruta a un viaje por la memoria, por los paisajes de nuestra infancia y por los valores que nos han sido legados.</p>
+        <p>En Viñedos de Herencia, creemos que el vino es una expresión de identidad, un símbolo de nuestra cultura y un reflejo de la dedicación de quienes han trabajado la tierra antes que nosotros. Al compartir una copa de nuestros vinos, estás participando en una tradición que valora la calidad, la autenticidad y la conexión entre las personas.</p>
+        <p>Ya sea que busques un vino para acompañar una cena especial, para regalar a un ser querido o simplemente para disfrutar de un momento de introspección, en Viñedos de Herencia encontrarás un compañero que enriquecerá cada experiencia. Porque en cada botella está la esencia de quienes somos, de las historias que compartimos y de los recuerdos que estamos creando para el futuro.</p>
+        <p>Nuestra misión es sencilla: ofrecer vinos que no solo satisfagan el paladar, sino que también toquen el corazón. Con Viñedos de Herencia, brindamos por lo que fue, lo que es y lo que será, invitándote a ser parte de esta historia que sigue escribiéndose en cada brindis.</p>
+
+    </div>
+
+    <!-- Carrusel de products destacados -->
+    <div class="container mt-5">
+        <h3>Productos destacados:</h3>
+        <div id="productCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <!-- Primer conjunto de cards -->
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./images/vinos/7.jpg" class="card-img-top" alt="Producto 1">
+                                <div class="card-body">
+                                    <h5 class="card-title">Riesling</h5>
+                                    <p class="card-text">Un Riesling aromático con notas de melaza y un toque dulce.</p>
+                                    <h5>$12.500</h5>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./images/vinos/10.jpg" class="card-img-top" alt="Producto 2">
+                                <div class="card-body">
+                                    <h5 class="card-title">Chenin Blanc</h5>
+                                    <p class="card-text">Un Chenin Blanc fresco con notas de miel y flores blancas.</p>
+                                    <h5>$20.000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./images/vinos/19.jpg" class="card-img-top" alt="Producto 3">
+                                <div class="card-body">
+                                    <h5 class="card-title">Marsanne</h5>
+                                    <p class="card-text">Un Marsanne con notas de melón y un toque de especias.</p>
+                                    <h5>$12.000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./images/vinos/21.jpg" class="card-img-top" alt="Producto 4">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rosado de Malbec</h5>
+                                    <p class="card-text">Un vino rosado fresco con notas de frutilla y cereza.</p>
+                                    <h5>$13.000</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Segundo conjunto de cards -->
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./images/vinos/24.jpg" class="card-img-top" alt="Producto 5">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rosado de Merlot</h5>
+                                    <p class="card-text">Un Merlot con sabor afrutado, ideal para tardes de verano.</p>
+                                    <h5>$12.000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./images/vinos/15.jpg" class="card-img-top" alt="Producto 6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Tempranillo</h5>
+                                    <p class="card-text">Tempranillo con notas de frutas y especias, con un toque de roble.</p>
+                                    <h5>$9.500</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./images/vinos/18.jpg" class="card-img-top" alt="Producto 7">
+                                <div class="card-body">
+                                    <h5 class="card-title">Cabernet Franc</h5>
+                                    <p class="card-text">Un Cabernet Franc con notas de pimientos y hierbas.</p>
+                                    <h5>$17.000</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card">
+                                <img src="./images/vinos/11.jpg" class="card-img-top" alt="Producto 8">
+                                <div class="card-body">
+                                    <h5 class="card-title">Merlot</h5>
+                                    <p class="card-text">Un Merlot suave con notas de ciruelas y chocolate.</p>
+                                    <h5>$11.500</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Puedes agregar más elementos de carousel-item para más cards -->
+            </div>
+    
+            <!-- Controles del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#productCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Anterior</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#productCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Siguiente</span>
+            </button>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="./scripts.js"></script>
+    <script src="./data.js"></script>
+
+    <footer class="bg-dark text-light py-3 mt-5">
+        <div class="container">
+            <div class="row text-center text-md-start align-items-center">
+                <!-- Logo -->
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <img src="./images/logo.jpg" alt="Logo Viñedos de Herencia" class="img-fluid" style="max-width: 120px;">
+                </div>
+    
+                <!-- Navegación rápida -->
+                <div class="col-12 col-md-4 mb-3 mb-md-0">
+                    <ul class="list-unstyled d-flex justify-content-center justify-content-md-start mb-0">
+                        <li class="ms-3"><a href="#" class="text-light text-decoration-none">Home</a></li>
+                        <li class="ms-3"><a href="productos.html" class="text-light text-decoration-none">Productos</a></li>
+                        <li class="ms-3"><a href="carrito.html" class="text-light text-decoration-none">Carrito</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Derechos reservados -->
+                <div class="col-12 col-md-4">
+                    <p class="mb-0">&copy; 2024 Viñedos de Herencia</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"></script>
+    <script src="./data.js"></script>
+    <script src="./scripts.js"></script>
+</body>
+</html>
