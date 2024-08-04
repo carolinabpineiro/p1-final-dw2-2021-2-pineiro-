@@ -204,7 +204,16 @@ function procesarCheckout() {
     }
 
     console.log(`Nombre: ${nombre}, Teléfono: ${telefono}, Email: ${email}, Dirección: ${direccion}, Fecha de Entrega: ${fechaEntrega}, Método de Pago: ${metodoPago}, Cuotas: ${cuotas}`);
+
+    const mensajeConfirmacion = `
+    Compra realizada con éxito!
+`;
+
+alert(mensajeConfirmacion);
+
 }
+
+
 
 // Función para cancelar el checkout y redirigir al carrito
 function cancelarCheckout() {
