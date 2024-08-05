@@ -167,6 +167,12 @@ p {
     flex: 1;
 }
 
+/*Modal*/
+#modal-details {
+   text-align: justify;
+   margin-right: 30px;
+}
+
 footer {
     width: 100%;
     background-color: #343a40; /* Color de fondo oscuro */
