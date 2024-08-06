@@ -180,3 +180,18 @@ footer {
     position: relative;
     bottom: 0;
 }
+
+
+#offer-banner {
+    font-size: 1.2rem;
+    font-weight: bold;
+    border-bottom: 2px solid #ffd700;
+    background-color: #ffeb3b; /* Color de fondo amarillo */
+    color: #000; /* Color del texto negro */
+}
+
+#offer-text {
+    margin: 0;
+}
+
+
